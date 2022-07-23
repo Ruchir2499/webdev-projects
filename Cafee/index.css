@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  /* margin: 10px 0; */
+}
+h1 {
+  /* font-size: 36px; */
+  margin: 0;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+/* !Nav Bar */
+
+.nav-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.5fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: white !important;
+  justify-self: start;
+  margin-left: 20px;
+  /* font-size: 15px; */
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  /* width: 80%;
+  justify-content: end; */
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+/* .nav-links:hover {
+  color: red;
+  transition: all 0.2s ease-out;
+} */
+
+.nav-links:hover {
+  background-color: #ccc;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+/* !! */
+
+.r-top {
+  top: 0;
+}
+
+.r-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.r-black-top {
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.r-black {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.r-padding {
+  padding: 8px 16px !important;
+}
+
+.r-block {
+  display: block;
+  width: 100%;
+}
+
+.r-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.r-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
+.r-col.s3 {
+  width: 24.99999%;
+}
+
+.r-col {
+  float: left;
+  width: 100%;
+}
+
+.r-row::before,
+.r-container::before,
+.r-panel::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.r-row::after,
+.r-container::after,
+.r-panel::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("cafehouse4.jpg");
+  min-height: 75%;
+}
+
+.r-display-container {
+  position: relative;
+}
+
+.r-grayscale-min {
+  filter: grayscale(50%);
+}
+
+/* *Common class */
+.r-padding-large {
+  padding: 12px 24px !important;
+}
+
+.r-center {
+  text-align: center !important;
+}
+
+/* for conetent */
+.r-padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.r-padding-48 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+.r-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+/*  */
+
+/* ** */
+
+.r-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.r-display-bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.r-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.r-text-white {
+  color: #fff !important;
+}
+
+.r-display-bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* * main middle container */
+
+.r-sand {
+  color: #000 !important;
+  background-color: #fdf5e6 !important;
+}
+
+.r-large {
+  font-size: 18px !important;
+}
+
+.r-grayscale {
+  filter: grayscale(75%);
+}
+
+/* ** */
+
+/* !Everything inside the container */
+
+.r-container,
+.r-panel {
+  padding: 0.1em 16px;
+}
+
+.r-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.r-wide {
+  letter-spacing: 4px;
+}
+
+.r-light-grey {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+}
+
+.r-leftbar {
+  border-left: 6px solid #ccc !important;
+}
+
+.r-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.r-margin-top {
+  margin-top: 16px !important;
+}
+
+/* ! */
+
+/* *MEnu */
+
+.r-card {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.r-col.s6 {
+  width: 49.99999%;
+}
+
+.r-dark-grey {
+  color: #fff !important;
+  background-color: #616161 !important;
+}
+
+.r-text-grey {
+  color: #757575 !important;
+}
+
+/* * */
+
+/* !form */
+
+.r-border {
+  border: 1px solid #ccc !important;
+}
+
+.r-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+  font: inherit;
+  margin: 0;
+}
+
+/* !! */
+
+/* **footer */
+.r-hover-text-green:hover {
+  color: red !important;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* * */
+@media screen and (max-width: 35em) {
+  .r-hide-small {
+    display: none;
+  }
+  .bgimg {
+    background-image: url("cafe2.jpg");
+  }
+
+  /* .nav-container {
+    position: relative;
+  } */
+
+  .navbar-logo {
+    font-size: 17px;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: all 0.4s ease;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 27%;
+    right: 8%;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+
+    <title>THE CAFE</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- <div class="r-top">
+      <div class="r-row r-padding r-black-top">
+        <div class="r-col s3">
+          <a href="#" class="r-button r-block">HOME</a>
+        </div>
+        <div class="r-col s3">
+          <a href="#about" class="r-button r-block">ABOUT</a>
+        </div>
+        <div class="r-col s3">
+          <a href="#menu" class="r-button r-block">MENU</a>
+        </div>
+        <div class="r-col s3">
+          <a href="#where" class="r-button r-block">WHERE</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- flex nav -->
+
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1><a href="#home" class="navbar-logo">THE CAFE</a></h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li onclick="scrollClose()">
+            <a href="#home" class="nav-links">HOME</a>
+          </li>
+          <li onclick="scrollClose()">
+            <a href="#about" class="nav-links">ABOUT</a>
+          </li>
+          <li onclick="scrollClose()">
+            <a href="#menu" class="nav-links">MENU</a>
+          </li>
+          <li onclick="scrollClose()">
+            <a href="#where" class="nav-links">WHERE</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg r-display-container r-grayscale-min" id="home">
+      <div class="r-display-bottomleft r-center r-padding-large r-hide-small">
+        <span class="r-tag">Open from 6am to 5pm</span>
+      </div>
+
+      <!-- <div class="r-display-middle r-center">
+        <span class="r-text-white" style="font-size: 90px">
+          the <br />
+          Cafe</span
+        >
+      </div> -->
+      <div class="r-display-bottomright r-center r-padding-large">
+        <span class="r-text-white">15 Adr street, 5015</span>
+      </div>
+    </header>
+
+    <!-- * Add a background color and large text to the whole page -->
+
+    <div class="r-sand r-grayscale r-large">
+      <!-- About container -->
+      <div class="r-container" id="about">
+        <div class="r-content" style="max-width: 700px">
+          <h5 class="r-center r-padding-64">
+            <span class="r-tag r-wide">ABOUT THE CAFE</span>
+          </h5>
+          <p>
+            The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p>
+            In addition to our full espresso and brew bar menu, we serve fresh
+            made-to-order breakfast and lunch sandwiches, as well as a selection
+            of sides and salads and other good stuff.
+          </p>
+
+          <!-- !r-panel::before NO -->
+          <div class="r-panel r-leftbar r-light-grey">
+            <p>
+              <i
+                >"Use products from nature for what it's worth - but never too
+                early, nor too late." Fresh is the new sweet.</i
+              >
+            </p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+          </div>
+
+          <!-- !r-panel::after NO -->
+
+          <img
+            src="coffeeshop2.jpg"
+            alt="coffeeshop"
+            style="width: 100%; max-width: 1000px"
+            class="r-margin-top"
+          />
+
+          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+          <p><strong>Address</strong> 15 Adr street, 5015, NY</p>
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="r-container" id="menu">
+        <div class="r-content" style="max-width: 700px">
+          <h5 class="r-center r-padding-48">
+            <span class="r-tag r-wide">THE MENU</span>
+          </h5>
+
+          <!-- menu top -->
+          <div class="r-row r-center r-card r-padding">
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Eat');"
+              id="myLink"
+            >
+              <div class="r-col s6 tablink r-dark-grey">Eat</div></a
+            >
+
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Drinks');"
+              id="myLink"
+            >
+              <div class="r-col s6 tablink">Drinks</div></a
+            >
+          </div>
+
+          <!-- menu-content-Eat -->
+          <div
+            id="Eat"
+            class="r-container menu r-padding-48 r-card"
+            style="display: block"
+          >
+            <h5>Bread Basket</h5>
+            <p class="r-text-grey">
+              Assortment of fresh baked fruit breads and muffins 5.50
+            </p>
+            <br />
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="r-text-grey">
+              Natural cereal of honey toasted oats, raisins, almonds and dates
+              7.00
+            </p>
+            <br />
+            <h5>Belgian Waffle</h5>
+            <p class="r-text-grey">
+              Vanilla flavored batter with malted flour 7.50
+            </p>
+            <br />
+            <h5>Scrambled eggs</h5>
+            <p class="r-text-grey">
+              Scrambled eggs, roasted red pepper and garlic, with green onions
+              7.50
+            </p>
+            <br />
+            <h5>Blueberry Pancakes</h5>
+            <p class="r-text-grey">
+              With syrup, butter and lots of berries 8.50
+            </p>
+          </div>
+
+          <!-- menu-contnet-Drinks -->
+          <div
+            id="Drinks"
+            class="r-container menu r-padding-48 r-card"
+            style="display: none"
+          >
+            <h5>Coffee</h5>
+            <p class="r-text-grey">Regular coffee 2.50</p>
+            <br />
+
+            <h5>Chocolato</h5>
+            <p class="r-text-grey">Chocolate espresso with milk 4.50</p>
+            <br />
+
+            <h5>Corretto</h5>
+            <p class="r-text-grey">Whiskey and coffee 5.00</p>
+            <br />
+
+            <h5>Iced tea</h5>
+            <p class="r-text-grey">Hot tea, except not hot 3.00</p>
+            <br />
+
+            <h5>Soda</h5>
+            <p class="r-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+          </div>
+
+          <img
+            src="coffeehouse3.jpg"
+            style="width: 100%; max-width: 1000px; margin-top: 32px"
+          />
+        </div>
+      </div>
+
+      <!-- Contact area container -->
+      <div class="r-container" id="where" style="padding-bottom: 32px">
+        <div class="r-content" style="max-width: 700px">
+          <h5 class="r-center r-padding-48">
+            <span class="r-tag r-wide">WHERE TO FIND US</span>
+          </h5>
+          <p>Find us at some address at some place.</p>
+          <img src="map.jpg" class="r-image" style="width: 100%" />
+
+          <p>
+            <span class="r-tag">FYI!</span>
+            We offer full-service catering for any event, large or small. We
+            understand your needs and we will cater the food to satisfy the
+            biggerst criteria of them all, both look and taste.
+          </p>
+          <p>
+            <strong>Reserve</strong> a table, ask for today's special or just
+            send us a message:
+          </p>
+
+          <form action="#" target="_blank">
+            <p>
+              <input
+                type="text"
+                class="r-input r-padding-16 r-border"
+                placeholder="Name"
+                required
+                name="Name"
+              />
+            </p>
+
+            <p>
+              <input
+                type="number"
+                class="r-input r-padding-16 r-border"
+                placeholder="How many people"
+                required
+                name="People"
+              />
+            </p>
+
+            <p>
+              <input
+                type="datetime-local"
+                class="r-input r-padding-16 r-border"
+                placeholder="Date and time"
+                required
+                name="date"
+                value="2022-07-21T20:00"
+              />
+            </p>
+
+            <p>
+              <input
+                class="r-input r-padding-16 r-border"
+                type="text"
+                placeholder="Message \ Special requirements"
+                required=""
+                name="Message"
+              />
+            </p>
+
+            <p>
+              <button class="r-button r-black" type="submit">
+                SEND MESSAGE
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="r-center r-light-grey r-padding-48 r-large">
+        <p>
+          Made by
+          <a
+            href="https://www.linkedin.com/in/ruchir-mumbarkar-37004518b/"
+            target="_blank"
+            class="r-hover-text-green"
+            style="text-decoration: none"
+            >Ruchir Mumbarkar</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
