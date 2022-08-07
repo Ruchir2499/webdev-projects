@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Marketing Website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav-container">
+      <ul class="nav-bar">
+        <li class="nav-links"><a href="#" class="nav-btn">Home</a></li>
+        <li class="nav-links"><a href="#plans" class="nav-btn">Plans</a></li>
+        <li class="nav-links"><a href="#about" class="nav-btn">About</a></li>
+        <li class="nav-links">
+          <a href="#contact" class="nav-btn">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <article>
+      <div
+        style="margin-top: 80px; margin-bottom: 80px; max-width: 1100px"
+        class="content"
+      >
+        <div class="panel">
+          <h1><b>MARKETING</b></h1>
+          <p>Template by Ruchir Mumbarkar</p>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="container">
+          <div class="mySlides display-container">
+            <img src="coffee.jpg" alt="coffee" style="width: 100%" />
+
+            <div class="display-topleft container padding-32">
+              <span class="white padding-large animate-bottom"
+                >Lorem ipsum</span
+              >
+            </div>
+          </div>
+
+          <div class="mySlides display-container">
+            <img src="workbench.jpg" alt="coffee" style="width: 100%" />
+
+            <div class="display-middle container padding-32">
+              <span class="white padding-large animate-bottom"
+                >Lorem ipsum</span
+              >
+            </div>
+          </div>
+
+          <div class="display-container mySlides">
+            <img src="sound.jpg" alt="speaker-image" style="width: 100%" />
+            <div class="display-topright container padding-32">
+              <span class="white padding-large animate-bottom"
+                >Lorem ipsum
+              </span>
+            </div>
+          </div>
+
+          <!-- Slideshow next/previous buttons -->
+          <div class="container dark-grey padding xlarge flex-container">
+            <div class="left" onclick="plusDivs(-1)">
+              <i class="fa fa-arrow-circle-left hover-text-teal"></i>
+            </div>
+
+            <div class="center">
+              <span
+                class="tag demodots border transparent hover-white white"
+                onclick="currentDiv(1)"
+              ></span>
+              <span
+                class="tag demodots border transparent hover-white white"
+                onclick="currentDiv(2)"
+              ></span>
+              <span
+                class="tag demodots border transparent hover-white white"
+                onclick="currentDiv(3)"
+              ></span>
+            </div>
+
+            <div class="right" onclick="plusDivs(1)">
+              <i class="fa fa-arrow-circle-right hover-text-teal"></i>
+            </div>
+          </div>
+
+          <!-- Grid -->
+          <div class="continer">
+            <div class="center padding-64">
+              <span class="xlarge bottombar border-dark-grey padding-16"
+                >What We Offer</span
+              >
+            </div>
+
+            <div class="offer-wrapper">
+              <div class="container light-grey padding-16">
+                <h3>Design</h3>
+                <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </p>
+              </div>
+
+              <div class="container grey padding-16">
+                <h3>Branding</h3>
+                <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </p>
+              </div>
+
+              <div class="container dark-grey padding-16">
+                <h3>Consultation</h3>
+                <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </p>
+              </div>
+
+              <div class="container black padding-16">
+                <h3>Promises</h3>
+                <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid -->
+          <div class="row-padding" id="plans">
+            <div class="center padding-64">
+              <h3>Pricing Plans</h3>
+              <p>Choose a pricing plan that fits your needs.</p>
+            </div>
+
+            <div class="pricing-container">
+              <div class="third margin-bottom">
+                <ul class="rm-ul rm-border center hover-shadow">
+                  <li class="black xlarge padding-32">Basic</li>
+                  <li class="padding-16"><b>10GB</b> Storage</li>
+                  <li class="padding-16"><b>10</b> Emails</li>
+                  <li class="padding-16"><b>10</b> Domains</li>
+                  <li class="padding-16"><b>Endless</b> Support</li>
+
+                  <li class="padding-16">
+                    <h2 class="wide">$ 10</h2>
+                    <span class="opacity">per month</span>
+                  </li>
+                  <li class="light-grey padding-24">
+                    <button class="button green padding-large">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="third margin-bottom">
+                <ul class="rm-ul rm-border center hover-shadow">
+                  <li class="dark-grey xlarge padding-32">Pro</li>
+                  <li class="padding-16"><b>25GB</b> Storage</li>
+                  <li class="padding-16"><b>25</b> Emails</li>
+                  <li class="padding-16"><b>25</b> Domains</li>
+                  <li class="padding-16"><b>Endless</b> Support</li>
+
+                  <li class="padding-16">
+                    <h2 class="wide">$ 25</h2>
+                    <span class="opacity">per month</span>
+                  </li>
+                  <li class="light-grey padding-24">
+                    <button class="button green padding-large">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="third margin-bottom">
+                <ul class="rm-ul rm-border center hover-shadow">
+                  <li class="black xlarge padding-32">Premium</li>
+                  <li class="padding-16"><b>50GB</b> Storage</li>
+                  <li class="padding-16"><b>50</b> Emails</li>
+                  <li class="padding-16"><b>50</b> Domains</li>
+                  <li class="padding-16"><b>Endless</b> Support</li>
+
+                  <li class="padding-16">
+                    <h2 class="wide">$ 50</h2>
+                    <span class="opacity">per month</span>
+                  </li>
+                  <li class="light-grey padding-24">
+                    <button class="button green padding-large">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid -->
+          <div class="row-padding" id="about">
+            <div class="center padding-64">
+              <span class="xlarge bottombar border-dark-grey padding-16"
+                >Who We Are</span
+              >
+            </div>
+
+            <div class="people-container">
+              <div class="third margin-bottom">
+                <div class="card-4">
+                  <img src="team1.jpg" alt="Jane" style="width: 100%" />
+                  <div class="container">
+                    <h3>Jane Doe</h3>
+                    <p class="opacity">CEO & Founder</p>
+                    <p>
+                      Phasellus eget enim eu lectus faucibus vestibulum.
+                      Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <p>
+                      <button class="button light-grey block">Contact</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third margin-bottom">
+                <div class="card-4">
+                  <img src="team2.jpg" alt="Mike" style="width: 100%" />
+                  <div class="container">
+                    <h3>Mike Ross</h3>
+                    <p class="opacity">Art Director</p>
+                    <p>
+                      Phasellus eget enim eu lectus faucibus vestibulum.
+                      Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <p>
+                      <button class="button light-grey block">Contact</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third margin-bottom">
+                <div class="card-4">
+                  <img src="team3.jpg" alt="John" style="width: 100%" />
+                  <div class="container">
+                    <h3>John Doe</h3>
+                    <p class="opacity">Designer</p>
+                    <p>
+                      Phasellus eget enim eu lectus faucibus vestibulum.
+                      Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <p>
+                      <button class="button light-grey block">Contact</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="center padding-64" id="contact">
+            <span class="xlarge bottombar border-dark-grey padding-16"
+              >Contact Us</span
+            >
+          </div>
+
+          <!-- Form -->
+          <form action="#" class="container" target="_blank">
+            <div class="form-wrapper">
+              <div class="section">
+                <label>Name</label>
+                <input
+                  type="text"
+                  class="input border hover-border-black"
+                  style="width: 100%"
+                  type="text"
+                  name="Name"
+                  required
+                />
+              </div>
+
+              <div class="section">
+                <label>Email</label>
+                <input
+                  type="email"
+                  class="input border hover-border-black"
+                  style="width: 100%"
+                  name="Email"
+                  required
+                />
+              </div>
+
+              <div class="section">
+                <label>Subject</label>
+                <input
+                  type="text"
+                  class="input border hover-border-black"
+                  style="width: 100%"
+                  name="Subject"
+                  required
+                />
+              </div>
+
+              <div class="section">
+                <label>Message</label>
+                <input
+                  type="text"
+                  class="input border hover-border-black"
+                  style="width: 100%"
+                  name="Message"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="button block black">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <footer class="container padding-32 light-grey center">
+      <h4>Footer</h4>
+      <a href="#" class="button black margin">
+        <i class="fa fa-arrow-up margin-right"></i>
+        To the top
+      </a>
+      <div class="section xlarge">
+        <!-- <p>Follow on Linkedin</p> -->
+        <!-- <i class="fa fa-linkedin hover-opacity"></i> -->
+      </div>
+      <p>
+        Made by
+        <a
+          href="https://www.linkedin.com/in/ruchir-mumbarkar-37004518b/"
+          target="_blank"
+        >
+          Ruchir Mumbarkar
+        </a>
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
